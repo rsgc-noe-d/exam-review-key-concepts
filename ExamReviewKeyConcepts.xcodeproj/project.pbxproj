@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		81389FEA1EC7BF7D00ACBE02 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81389FE91EC7BF7D00ACBE02 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		81389FE41EC7BF7D00ACBE02 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		81389FE61EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExamReviewKeyConcepts; sourceTree = BUILT_PRODUCTS_DIR; };
-		81389FE91EC7BF7D00ACBE02 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81389FE61EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = ExamReviewKeyConcepts; path = /Users/russellgordon/Documents/Repositories/ICS2O/Exam/ExamReviewKeyConcepts/build/Debug/ExamReviewKeyConcepts; sourceTree = "<absolute>"; };
+		81389FF01EC7BFA700ACBE02 /* ExamReviewKeyConcepts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ExamReviewKeyConcepts.playground; path = ExamReviewKeyConcepts/ExamReviewKeyConcepts.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,25 +37,8 @@
 		81389FDD1EC7BF7D00ACBE02 = {
 			isa = PBXGroup;
 			children = (
-				81389FE81EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */,
-				81389FE71EC7BF7D00ACBE02 /* Products */,
+				81389FF01EC7BFA700ACBE02 /* ExamReviewKeyConcepts.playground */,
 			);
-			sourceTree = "<group>";
-		};
-		81389FE71EC7BF7D00ACBE02 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				81389FE61EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		81389FE81EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */ = {
-			isa = PBXGroup;
-			children = (
-				81389FE91EC7BF7D00ACBE02 /* main.swift */,
-			);
-			path = ExamReviewKeyConcepts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +85,7 @@
 				en,
 			);
 			mainGroup = 81389FDD1EC7BF7D00ACBE02;
-			productRefGroup = 81389FE71EC7BF7D00ACBE02 /* Products */;
+			productRefGroup = 81389FDD1EC7BF7D00ACBE02;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -120,7 +99,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81389FEA1EC7BF7D00ACBE02 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
