@@ -333,8 +333,8 @@ open class Canvas : CustomPlaygroundQuickLookable {
         // set the text color to dark gray
         let fieldColor : NSColor = NSColor(hue: textColor.translatedHue, saturation: textColor.translatedSaturation, brightness: textColor.translatedBrightness, alpha: textColor.translatedAlpha)
         
-        // set the font to Helvetica Neue 24
-        let fieldFont = NSFont(name: "Helvetica Neue", size: CGFloat(size))
+        // set the font to Helvetica Bold 24
+        let fieldFont = NSFont(name: "Helvetica Bold", size: CGFloat(size))
         
         // set the line spacing to 1
         let paraStyle = NSMutableParagraphStyle()
