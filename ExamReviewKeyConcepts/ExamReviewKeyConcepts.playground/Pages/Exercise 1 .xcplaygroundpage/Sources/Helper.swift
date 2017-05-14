@@ -317,7 +317,7 @@ open class Canvas : CustomPlaygroundQuickLookable {
     }
     
     // Draw text on the image
-    open func drawText(message: String, size: Int = 24, x: Int = 0, y: Int = 0, kerning : Float = 0.0)  {
+    open func drawText(message: String, size: Int, x: Int, y: Int, kerning : Float)  {
         
         // Set attributes of shape based on the canvas scale factor
         var size = size
@@ -358,6 +358,12 @@ open class Canvas : CustomPlaygroundQuickLookable {
         // Draw the string
         string.draw(at: NSPoint(x: x, y: y), withAttributes: attributes)
         
+    }
+    
+    // Draw text on the image
+    open func drawText(message: String, size: Int, x: Int, y: Int)  {
+        
+        drawText(message: message, size: size, x: x, y: y, kerning: 0.0)
     }
     
     // Draw a line on the image
