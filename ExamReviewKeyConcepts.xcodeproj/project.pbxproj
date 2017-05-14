@@ -6,32 +6,9 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXCopyFilesBuildPhase section */
-		81389FE41EC7BF7D00ACBE02 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		81389FF01EC7BFA700ACBE02 /* ExamReviewKeyConcepts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ExamReviewKeyConcepts.playground; path = ExamReviewKeyConcepts/ExamReviewKeyConcepts.playground; sourceTree = "<group>"; };
-		81389FF51EC7D3FE00ACBE02 /* ExamReviewKeyConcepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = ExamReviewKeyConcepts; path = /Users/russellgordon/Documents/Repositories/ICS2O/Exam/ExamReviewKeyConcepts/build/Debug/ExamReviewKeyConcepts; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		81389FE31EC7BF7D00ACBE02 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		81389FDD1EC7BF7D00ACBE02 = {
@@ -43,26 +20,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		81389FE51EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81389FED1EC7BF7D00ACBE02 /* Build configuration list for PBXNativeTarget "ExamReviewKeyConcepts" */;
-			buildPhases = (
-				81389FE21EC7BF7D00ACBE02 /* Sources */,
-				81389FE31EC7BF7D00ACBE02 /* Frameworks */,
-				81389FE41EC7BF7D00ACBE02 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ExamReviewKeyConcepts;
-			productName = ExamReviewKeyConcepts;
-			productReference = 81389FF51EC7D3FE00ACBE02 /* ExamReviewKeyConcepts */;
-			productType = "com.apple.product-type.tool";
-		};
-/* End PBXNativeTarget section */
-
 /* Begin PBXProject section */
 		81389FDE1EC7BF7D00ACBE02 /* Project object */ = {
 			isa = PBXProject;
@@ -70,12 +27,6 @@
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Russell Gordon";
-				TargetAttributes = {
-					81389FE51EC7BF7D00ACBE02 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = 81389FE11EC7BF7D00ACBE02 /* Build configuration list for PBXProject "ExamReviewKeyConcepts" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -89,20 +40,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81389FE51EC7BF7D00ACBE02 /* ExamReviewKeyConcepts */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		81389FE21EC7BF7D00ACBE02 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		81389FEB1EC7BF7D00ACBE02 /* Debug */ = {
@@ -195,22 +135,6 @@
 			};
 			name = Release;
 		};
-		81389FEE1EC7BF7D00ACBE02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		81389FEF1EC7BF7D00ACBE02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -219,15 +143,6 @@
 			buildConfigurations = (
 				81389FEB1EC7BF7D00ACBE02 /* Debug */,
 				81389FEC1EC7BF7D00ACBE02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81389FED1EC7BF7D00ACBE02 /* Build configuration list for PBXNativeTarget "ExamReviewKeyConcepts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81389FEE1EC7BF7D00ACBE02 /* Debug */,
-				81389FEF1EC7BF7D00ACBE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
