@@ -3,7 +3,7 @@
 //: ## Your goal
 //: Reproduce this image:
 //:
-//: ![The Pixies](ThePixies.jpg "The Pixies")
+//: ![The Pixies](ThePixies.png "The Pixies")
 /*:
  ## Notes:
  * you will work on a canvas that is 400 pixels wide by 600 pixels high
