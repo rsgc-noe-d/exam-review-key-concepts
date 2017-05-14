@@ -442,26 +442,25 @@ open class Canvas : CustomPlaygroundQuickLookable {
     }
     
     // Draw a rectangle on the image
-    open func drawRectangle(bottomLeftX: Int, bottomLeftY: Int, width: Int, height: Int, borderWidth: Int = 1) {
+    open func drawRectangle(bottomLeftX: Float, bottomLeftY: Float, width: Float, height: Float, borderWidth: Float = 1) {
         
         // Set attributes of shape based on the canvas scale factor
         var bottomLeftX = bottomLeftX
-        bottomLeftX *= scale
+        bottomLeftX *= Float(scale)
         var bottomLeftY = bottomLeftY
-        bottomLeftY *= scale
+        bottomLeftY *= Float(scale)
         var width = width
-        width *= scale
+        width *= Float(scale)
         var height = height
-        height *= scale
+        height *= Float(scale)
         var borderWidth = borderWidth
-        borderWidth *= scale
+        borderWidth *= Float(scale)
         
         // Make the new path
-        let path = NSBezierPath(rect: NSRect(x: bottomLeftX, y: bottomLeftY, width: width, height: height))
-        
+        let path = NSBezierPath(rect: NSRect(x: CGFloat(bottomLeftX), y: CGFloat(bottomLeftY), width: CGFloat(width), height: CGFloat(height)))
         
         // Set width of border
-        if borderWidth > 1 * scale {
+        if borderWidth > 1 * Float(scale) {
             path.lineWidth = CGFloat(borderWidth)
         } else {
             path.lineWidth = CGFloat(self.defaultBorderWidth * scale)
@@ -485,11 +484,25 @@ open class Canvas : CustomPlaygroundQuickLookable {
         
     }
     
+    // Draw a rectangle on the image
+    open func drawRectangle(bottomLeftX: Int, bottomLeftY: Int, width: Int, height: Int, borderWidth: Int = 1) {
+        
+        self.drawRectangle(bottomLeftX: Float(bottomLeftX), bottomLeftY: Float(bottomLeftY), width: Float(width), height: Float(height))
+        
+    }
+    
+    // Convenience method to draw rectangle from it's centre point
+    open func drawRectangle(centreX: Float, centreY: Float, width: Float, height: Float, borderWidth: Float = 1) {
+        
+        // Call the original method but with points translated
+        self.drawRectangle(bottomLeftX: centreX - width / 2, bottomLeftY: centreY - height / 2, width: width, height: height, borderWidth: borderWidth)
+    }
+    
     // Convenience method to draw rectangle from it's centre point
     open func drawRectangle(centreX: Int, centreY: Int, width: Int, height: Int, borderWidth: Int = 1) {
         
         // Call the original method but with points translated
-        self.drawRectangle(bottomLeftX: centreX - width / 2, bottomLeftY: centreY - height / 2, width: width, height: height, borderWidth: borderWidth)
+        self.drawRectangle(centreX: Float(centreX), centreY: Float(centreY), width: Float(width), height: Float(height))
         
     }
     
@@ -627,7 +640,7 @@ open class Canvas : CustomPlaygroundQuickLookable {
     open func restoreState() {
         NSGraphicsContext.restoreGraphicsState()
     }
-
+    
     open func drawAxes() {
         
         // Draw horizontal axis
