@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		81389FF01EC7BFA700ACBE02 /* ExamReviewKeyConcepts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ExamReviewKeyConcepts.playground; path = ExamReviewKeyConcepts/ExamReviewKeyConcepts.playground; sourceTree = "<group>"; };
-		81389FF31EC7C68C00ACBE02 /* ExamReviewKeyConcepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = ExamReviewKeyConcepts; path = /Users/russellgordon/Documents/Repositories/ICS2O/Exam/ExamReviewKeyConcepts/build/Debug/ExamReviewKeyConcepts; sourceTree = "<absolute>"; };
+		81389FF51EC7D3FE00ACBE02 /* ExamReviewKeyConcepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = ExamReviewKeyConcepts; path = /Users/russellgordon/Documents/Repositories/ICS2O/Exam/ExamReviewKeyConcepts/build/Debug/ExamReviewKeyConcepts; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			);
 			name = ExamReviewKeyConcepts;
 			productName = ExamReviewKeyConcepts;
-			productReference = 81389FF31EC7C68C00ACBE02 /* ExamReviewKeyConcepts */;
+			productReference = 81389FF51EC7D3FE00ACBE02 /* ExamReviewKeyConcepts */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */

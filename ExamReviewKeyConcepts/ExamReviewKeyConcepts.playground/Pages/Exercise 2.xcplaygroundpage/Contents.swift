@@ -1,9 +1,9 @@
 //: [Previous](@previous)
-//: # Exercise 1
+//: # Exercise 2
 //: ## Your goal
 //: Reproduce this image:
 //:
-//: ![Blur](Blur.gif "Blur")
+//: ![Undertones](Undertones.gif "Undertones")
 /*:
  ## Notes:
  * you will work on a canvas that is 400 pixels wide by 500 pixels high
