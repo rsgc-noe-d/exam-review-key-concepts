@@ -317,7 +317,7 @@ open class Canvas : CustomPlaygroundQuickLookable {
     }
     
     // Draw text on the image
-    open func drawText(message: String, size: Int = 24, x: Int = 0, y: Int = 0)  {
+    open func drawText(message: String, size: Int = 24, x: Int = 0, y: Int = 0, kerning : Float = 0.0)  {
         
         // Set attributes of shape based on the canvas scale factor
         var size = size
@@ -326,6 +326,8 @@ open class Canvas : CustomPlaygroundQuickLookable {
         x *= scale
         var y = y
         y *= scale
+        var kerning = kerning
+        kerning *= Float(scale)
         
         // Convert the provided String object to an NSString object
         let string: NSString = NSString(string: message)
@@ -334,6 +336,7 @@ open class Canvas : CustomPlaygroundQuickLookable {
         let fieldColor : NSColor = NSColor(hue: textColor.translatedHue, saturation: textColor.translatedSaturation, brightness: textColor.translatedBrightness, alpha: textColor.translatedAlpha)
         
         // set the font to Helvetica Bold 24
+        //        let fieldFont = NSFont(name: "Berthold Akzidenz Grotesk Medium", size: CGFloat(size))
         let fieldFont = NSFont(name: "Helvetica Bold", size: CGFloat(size))
         
         // set the line spacing to 1
@@ -348,7 +351,8 @@ open class Canvas : CustomPlaygroundQuickLookable {
             NSForegroundColorAttributeName: fieldColor,
             NSParagraphStyleAttributeName: paraStyle,
             NSObliquenessAttributeName: skew as AnyObject,
-            NSFontAttributeName: fieldFont!
+            NSFontAttributeName: fieldFont!,
+            NSKernAttributeName: NSNumber(value: kerning) as AnyObject
         ]
         
         // Draw the string
@@ -622,6 +626,20 @@ open class Canvas : CustomPlaygroundQuickLookable {
     
     open func restoreState() {
         NSGraphicsContext.restoreGraphicsState()
+    }
+    
+    open func drawAxes() {
+        
+        // Draw horizontal axis
+        self.drawLine(fromX: self.width * -10, fromY: 0, toX: self.width * 10, toY: 0, lineWidth: 1, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        // Draw vertical axis
+        self.drawLine(fromX: 0, fromY: self.height * -10, toX: 0, toY: self.height * 10, lineWidth: 1, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        // Draw labels
+        self.drawText(message: "x", size: 12, x: 50, y: 5)
+        self.drawText(message: "y", size: 12, x: 5, y: 50)
+        
     }
     
     /**

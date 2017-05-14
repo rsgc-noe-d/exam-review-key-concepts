@@ -3,7 +3,7 @@
 //: ## Your goal
 //: Reproduce this image:
 //:
-//: ![Undertones](Undertones.gif "Undertones")
+//: ![Undertones](Undertones.png "Undertones")
 /*:
  ## Notes:
  * you will work on a canvas that is 400 pixels wide by 500 pixels high
