@@ -22,8 +22,13 @@ import PlaygroundSupport
 //: ## Your code starts here
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
-
-
+canvas.fillColor = Color(hue: 190  , saturation: 100, brightness: 80, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+canvas.drawText(message: "blur", size: 200, x: 10, y: 300)
+for blur in stride(from: 400, to: 0, by: -5){
+    canvas.drawText(message: "blur", size: 200, x: 10, y: blur)
+    
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
